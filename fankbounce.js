@@ -6,7 +6,6 @@ let y_incr = 5;
 function init() {
     update_color();
     fank.style.position = 'absolute';
-    document.body.style.background = '#4d4d4d';
     fank.style.top = `${x_incr}px`;
     fank.style.left = `${y_incr}px`;
 
