@@ -1,5 +1,13 @@
+let counter = 1;
+let ourImage = document.querySelector("#ourImage");
 
-const colors = ['red', 'green', 'blue', 'white', 'yellow', 'purple', 'black'];
+ourImage.addEventListener("", function() {
+  ourImage.src = `konstig${counter}.jpg`;
+  counter++;
+  if (counter > 11) {
+    counter = 1;
+  }
+});
 const fank = document.getElementById('fank');
 let x_incr = 5;
 let y_incr = 5;
@@ -17,7 +25,7 @@ function init() {
 // Change the color of the fank logo
 function update_color() {
     const currentColorIndex = colors.indexOf(fank.style.fill);
-    fank.style.fill = colors[(currentColorIndex + 1) % colors.length];
+    fank.style.fill = colors[(currentColorIndex + 1) % counter.length];
 }
 
 function handle_collision() {
