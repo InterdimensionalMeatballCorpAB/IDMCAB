@@ -1,13 +1,4 @@
-let counter = 1;
-let ourImage = document.querySelector("#ourImage");
 
-ourImage.addEventListener("", function() {
-  ourImage.src = `konstig${counter}.jpg`;
-  counter++;
-  if (counter > 11) {
-    counter = 1;
-  }
-});
 const fank = document.getElementById('fank');
 let x_incr = 5;
 let y_incr = 5;
