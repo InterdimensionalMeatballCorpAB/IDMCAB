@@ -1,5 +1,5 @@
-var x1 = document.getElementById("konstig1.jpg");
-const colors = ['konstig1', 'green', 'blue', 'white', 'yellow', 'purple', 'black'];
+
+const colors = ['red', 'green', 'blue', 'white', 'yellow', 'purple', 'black'];
 const fank = document.getElementById('fank');
 let x_incr = 5;
 let y_incr = 5;
