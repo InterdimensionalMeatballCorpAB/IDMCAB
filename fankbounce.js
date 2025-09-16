@@ -6,6 +6,7 @@ let y_incr = 5;
 function init() {
     update_color();
     fank.style.position = 'absolute';
+    document.body.style.background = '#4d4d4d';
     fank.style.top = `${x_incr}px`;
     fank.style.left = `${y_incr}px`;
 
@@ -16,7 +17,7 @@ function init() {
 // Change the color of the fank logo
 function update_color() {
     const currentColorIndex = colors.indexOf(fank.style.fill);
-    fank.style.fill = colors[(currentColorIndex + 1) % counter.length];
+    fank.style.fill = colors[(currentColorIndex + 1) % colors.length];
 }
 
 function handle_collision() {
