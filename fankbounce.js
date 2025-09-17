@@ -1,4 +1,32 @@
-const colors = ['red', 'green', 'blue', 'white', 'yellow', 'purple', 'black'];
+
+Colors = new Array(11);
+Colors[0] = new Image();
+Colors[0].src = new "konstig0"; 
+Colors[1] = new Image();
+Colors[1].src = new "konstig1";
+Colors[2] = new Image();
+Colors[2].src = new "konstig2";
+Colors[3] = new Image();
+Colors[3].src = new "konstig3";
+Colors[4] = new Image();
+Colors[4].src = new "konstig4";
+Colors[5] = new Image();
+Colors[5].src = new "konstig5";
+Colors[6] = new Image();
+Colors[6].src = new "konstig6";
+Colors[7] = new Image();
+Colors[7].src = new "konstig7";
+Colors[8] = new Image();
+Colors[8].src = new "konstig8";
+Colors[9] = new Image();
+Colors[9].src = new "konstig9";
+Colors[10] = new Image();
+Colors[10].src = new "konstig10";
+Colors[11] = new Image();
+Colors[11].src = new "konstig11";
+
+
+
 const fank = document.getElementById('fank');
 let x_incr = 5;
 let y_incr = 5;
@@ -15,8 +43,9 @@ function init() {
 
 // Change the color of the fank logo
 function update_color() {
-    const currentColorIndex = colors.indexOf(fank.style.fill);
-    fank.style.fill = colors[(currentColorIndex + 1) % colors.length];
+var b = Math.floor(Math.random());
+const fankIMG = document.getElementById(Colors[b]);
+
 }
 
 function handle_collision() {
