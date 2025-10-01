@@ -54,38 +54,40 @@
     <script>
         
 Colors = new Array(11);
-Colors[0] = new Image();
-Colors[0].src = new "konstig0"; 
+Colors[0] = new Image(100, 200);
+Colors[0].src = "konstig1.jpg"; 
 Colors[1] = new Image();
-Colors[1].src = new "konstig1";
+Colors[1].src = "konstig2.jpg";
 Colors[2] = new Image();
-Colors[2].src = new "konstig2";
+Colors[2].src = "konstig3.jpg";
 Colors[3] = new Image();
-Colors[3].src = new "konstig3";
+Colors[3].src = "konstig3.jpg";
 Colors[4] = new Image();
-Colors[4].src = new "konstig4";
+Colors[4].src = "konstig4.jpg";
 Colors[5] = new Image();
-Colors[5].src = new "konstig5";
+Colors[5].src = "konstig5.jpg";
 Colors[6] = new Image();
-Colors[6].src = new "konstig6";
+Colors[6].src = "konstig6.jpg";
 Colors[7] = new Image();
-Colors[7].src = new "konstig7";
+Colors[7].src = "konstig7.jpg";
 Colors[8] = new Image();
-Colors[8].src = new "konstig8";
+Colors[8].src = "konstig8.jpg";
 Colors[9] = new Image();
-Colors[9].src = new "konstig9";
+Colors[9].src = "konstig9.png";
 Colors[10] = new Image();
-Colors[10].src = new "konstig10";
+Colors[10].src = "konstig10.jpg";
 Colors[11] = new Image();
-Colors[11].src = new "konstig11";
+Colors[11].src = "konstig11.jpg";
 
 function setColor() {
-    var num = Math.floor(Math.random());
-    document.getElementById(konstig[num])
+    var num = Math.floor(Math.random()* 11);
+    document.getElementById("fank").src = Colors[num];
+    console.log(Colors);
+    return Colors;
 }
     </script>
     
-    <img src="setColor()" id="fank">
+    <img src="" id="fank" >
 
     <script src="./fankbounce.js" charset="utf-8">
     

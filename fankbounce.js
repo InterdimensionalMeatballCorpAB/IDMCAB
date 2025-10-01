@@ -1,4 +1,3 @@
-
 const colors = ['red', 'green', 'blue', 'white', 'yellow', 'purple', 'black'];
 const fank = document.getElementById('fank');
 let x_incr = 5;
